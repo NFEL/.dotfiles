@@ -1,6 +1,7 @@
 [user]
 	email = nfilsaraee@gmail.com
 	name = nfel
+	signingkey = 6D281906D11E15CE
 [core]
 	editor = flatpak run --file-forwarding org.small_tech.comet @@
 [filter "lfs"]
