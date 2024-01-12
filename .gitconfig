@@ -1,0 +1,10 @@
+[user]
+	email = nfilsaraee@gmail.com
+	name = nfel
+[core]
+	editor = flatpak run --file-forwarding org.small_tech.comet @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
