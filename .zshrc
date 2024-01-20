@@ -39,7 +39,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Go Version manager
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
 
 # Wasmer
 export WASMER_DIR="/home/nfel/.wasmer"
@@ -96,6 +98,7 @@ export \
 
 alias pvi="HTTPS_PROXY=http://localhost:1666 nvim ."
 alias o="HTTPS_PROXY=http://localhost:1666 nvim ."
+alias wez="wezterm"
 
 
 # Aesthetics 
@@ -103,3 +106,5 @@ echo "$(date '+%D %T' | toilet -f term -F border --gay)";
 cat /home/nfel/.ascii/art/$(shuf -i 1-$(ls -A /home/nfel/.ascii/art/ | wc -w) -n 1)
 alias flutter="HTTPS_PROXY=http://localhost:1666 flutter"
 export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu"
+export GPG_TTY=$(tty)
+export WEZTERM_CONFIG_FILE=$HOME/.wezterm.lua

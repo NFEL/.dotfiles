@@ -1,0 +1,7 @@
+{
+  "builder": { "gc": { "defaultKeepStorage": "20GB", "enabled": true } },
+  "experimental": false,
+  "features": { "buildkit": true },
+  "insecure-registries": ["https://docker.arvancloud.ir"],
+  "registry-mirrors": ["https://docker.arvancloud.ir"]
+}

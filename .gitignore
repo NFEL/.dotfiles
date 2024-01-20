@@ -1,0 +1,6 @@
+.docker/desktop/
+.docker/.token_seed
+.docker/.token_seed.lock
+*.lock
+.docker/contexts/meta
+.docker/.buildNodeID
